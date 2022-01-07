@@ -1,0 +1,238 @@
+*{
+    font-family: "微軟正黑體";
+    margin:0; 
+    padding:0;
+    box-sizing: border-box;
+    outline: none; 
+    border:none;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+html{
+    overflow-x: hidden;
+}
+body{
+    background:#f7f7f7;
+}
+#bg{
+    background-color: #aebec3;
+    margin-top: 80px;
+}
+.title{
+    text-align: center;
+    margin-top: 60px;
+    padding-top: 30px;
+}
+.t1style{
+    background-color: rgb(195, 195, 194);
+    width: 120px;
+    margin: 0 auto;
+}
+.title2{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.name{
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    margin: auto;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    z-index: 100;
+    background-color: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.03);
+}
+.menu{
+    display: flex;
+}
+.menu li a{
+    margin: 5px;
+    padding: 5px 20px;
+    color: #232323;
+    font-weight: 500;
+    opacity: 0.4;
+}
+.menu .active{
+    opacity: 1;
+}
+.menu li a:hover{
+    opacity: 1;
+    transition: all ease 0.3s;
+}
+.logo{
+    font-size: 30px;
+    color: #414141;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: 600;
+}
+.right-elements{
+    display: flex;
+}
+.right-elements a{
+    margin: 0px 10px;
+}
+
+.right-elements a {
+    color: #2c2c2c;
+}
+.right-elements a:hover{
+    color: brown;
+    transition: all ease 0.2s;
+}
+.body-review1{ 
+    padding:30px 130px;
+    line-height: 35px;
+    width: 450px;
+    color: #2c2b2c;
+    font-weight: 600;
+}
+.modify{
+    background-color: rgb(44, 143, 255);
+    padding: 8px;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+.modify:hover{
+    background-color: seashell;
+    color: slategrey;
+}
+.but{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+.rev{
+    padding: 0 10px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.reviews{
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.review{
+    margin:0 auto;
+    min-width: 300px;
+    max-width: 500px;
+    margin-bottom: 40px;
+}
+.body-review{
+    background-color: rgb(238, 238, 238);
+    padding:35px;
+    box-shadow: 2px 2px 10px 3px rgb(225, 225, 225);
+    transition:  .3s linear;
+}
+.body-review:hover{
+    box-shadow: 0px 0px 5px 5px rgb(200, 200, 200);
+}
+.pro-name{
+    font-size: 28px;
+    color: rgb(50, 50, 50);
+    margin-bottom: 10px;
+}
+.rating{
+    color: rgb(253, 180, 42);
+    margin: 20px 0;
+}
+.detail-review{
+    line-height: 30px;
+    letter-spacing: 1px;
+    color: rgb(36, 33, 33);
+}
+.time{
+    margin-top: 10px;
+}
+footer {
+    background-color: #f5f5f5;
+    padding: 20px 5px;
+    position: relative;
+    margin-top: 20px;
+    border-top: 1px solid #f1f1f1;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 10px auto;
+}
+
+.footer-brand-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.footer-lego{
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+.footer-social{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-social a{
+    margin: 0 10px;
+    border-radius: 35%;
+    color: #414141;
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.03);
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-social a:hover{
+    background-color: #ff523b;
+    color: #ffffff;
+    transition: all ease 0.3s;
+}
+.footer-menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 50px;
+}
+.footer-menu-box ul li a,.footer-menu-box ul li{
+    color: grey;
+    font-size: 20px;
+    margin: 20px 12px;
+}
+@media (max-width: 1117px){
+    .reviews{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 678px){
+    .review{
+      margin-top: 30px;
+      margin-bottom: 10px;
+    }
+    .title{
+        margin-top: 100px;
+    }
+}

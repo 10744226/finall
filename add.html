@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <title>Document</title>
+    <style>
+        html{
+            display: flex;
+            justify-content: center;
+        }
+        .title{
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+<body>
+    <div class="title">
+        <h1 class="tistyle">修改商品</h1>
+        <a href="index.html">回首頁</a>
+    </div>
+    <table border="1">
+        <thead>
+        <tr>
+            <th>編號</th>
+            <th>商品名稱</th>
+            <th>價錢</th>
+            <th>上架時間</th>
+            <th>庫存</th>
+            <th>圖檔</th>
+            <th>介紹</th>
+            <th>修改</th>
+            <th>刪除</th>
+        </tr>
+        </thead>
+        <td>
+            <form action="">
+                <td><input name="name" type="text" value="名稱" required></td>
+                <td><input name="price" type="text" value="價錢" style="width: 3em;" required></td>
+                <td><input name="time" type="text" value="上架時間" required></td>
+                <td><input name="residual" type="text" value="庫存" style="width: 2em;" required></td>
+                <td><input name="img_file" type="text" value="圖檔" style="width: 3em;" required></td>
+                <td><input name="introduce" type="text" value="介紹" style="width: 5em;" required></td>
+                <td><button type="submit"><i class="fa fa-fw fa-wrench"></i></button></td>
+                <td><button type="submit"><i class="fa fa-fw fa-trash"></i></button></td>
+            </form>
+        </td>
+        <tr>
+            <form action="">
+                <th><i class="fas fa-plus"></i></th>
+                <td><input type="text" name="name" required></td>
+                <td><input type="text" name="price" style="width: 3em;" required></td>
+                <td><input type="text" name="time" required></td>
+                <td><input type="text" name="residual" style="width: 2em;" required></td>
+                <td><input type="text" name="img_file" style="width: 3em;" required></td>
+                <td><input type="text" name="introduce" style="width: 5em;" required></td>
+                <td colspan=2><button  type="submit">新增</button></td>
+            </form>
+        </tr>
+    </table>
+</body>
+</html>

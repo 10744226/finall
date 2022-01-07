@@ -1,0 +1,206 @@
+*{
+    font-family: "微軟正黑體";
+    margin:0; 
+    padding:0;
+    box-sizing: border-box;
+    outline: none; 
+    border:none;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+html{
+    overflow-x: hidden;
+}
+body{
+    background:#f7f7f7;
+}
+#bg{
+    background-color: #aebec3;
+    margin-top: 80px;
+    height: 690px;
+}
+.title{
+    text-align: center;
+    margin-top: 60px;
+    padding-top: 30px;
+}
+.t1style{
+    background-color: rgb(195, 195, 194);
+    width: 120px;
+    margin: 0 auto;
+}
+.title2{
+    text-align: center;
+    margin-top: 30px;
+}
+.name{
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    margin: auto;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    z-index: 100;
+    background-color: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.03);
+}
+.menu{
+    display: flex;
+}
+.menu li a{
+    margin: 5px;
+    padding: 5px 20px;
+    color: #232323;
+    font-weight: 500;
+    opacity: 0.4;
+}
+.menu .active{
+    opacity: 1;
+}
+.menu li a:hover{
+    opacity: 1;
+    transition: all ease 0.3s;
+}
+.logo{
+    font-size: 30px;
+    color: #414141;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: 600;
+}
+.right-elements{
+    display: flex;
+}
+.right-elements a{
+    margin: 0px 10px;
+}
+
+.right-elements a {
+    color: #2c2c2c;
+}
+.right-elements a:hover{
+    color: brown;
+    transition: all ease 0.2s;
+}
+
+.input-text-style:focus{
+    background-color: rgb(251, 231, 217);
+}
+.modify{
+    background-color: rgb(44, 143, 255);
+    padding: 8px;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+.modify:hover{
+    background-color: seashell;
+    color: slategrey;
+}
+.but{
+    padding-left: 42px;
+    padding-top: 10px;
+}
+.rev{
+    padding: 0 10px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.reviews{
+    margin: 10px auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.review{
+    margin:0 auto;
+    min-width: 300px;
+    max-width: 500px;
+    margin-bottom: 40px;
+}
+.body-review1{ 
+    color: #2c2b2c;
+    font-weight: 600;
+    line-height: 30px;
+    padding-top: 10px;
+    padding-left: 70px;
+}
+.footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 10px auto;
+}
+
+.footer-brand-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.footer-lego{
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+.footer-social{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-social a{
+    margin: 0 10px;
+    border-radius: 35%;
+    color: #414141;
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.03);
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-social a:hover{
+    background-color: #ff523b;
+    color: #ffffff;
+    transition: all ease 0.3s;
+}
+.footer-menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 50px;
+}
+.footer-menu-box ul li a,.footer-menu-box ul li{
+    color: grey;
+    font-size: 20px;
+    margin: 20px 12px;
+}
+@media (max-width: 1117px){
+    .reviews{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 678px){
+    .review{
+      margin-top: 30px;
+      margin-bottom: 10px;
+    }
+    .title{
+        margin-top: 100px;
+    }
+}

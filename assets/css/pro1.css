@@ -1,0 +1,142 @@
+*{
+    font-family: "微軟正黑體";
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 70vh;
+}
+.comment-title{
+    margin-top: 60px;
+    text-align: center;
+    font-size: 25px;
+}
+.comment-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.comment-container input{
+    width: 50%;
+    height: 30px;
+    padding: 0 15px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    border: 1px solid gray;
+}
+.rating1{
+    position: relative;
+    transform: translate(-43%,80%) rotateY(180deg);
+    display: flex;
+}
+.rating1 input{
+    display: none;
+}
+.rating1 label{
+    display: block;
+    cursor: pointer;
+    width: 50px;
+    background-color: white;
+}
+.rating1 label:before{
+    content: '\f005';
+    font-family: fontAwesome;
+    position: relative;
+    display: block;
+    font-size: 30px;
+    color: orangered;
+}
+.rating1 label:after{
+    content: '\f005';
+    font-family: fontAwesome;
+    position: absolute;
+    display: block;
+    font-size: 30px;
+    color: grey;
+    top: 0;
+    opacity: 1;
+    transition: .5s;
+    text-shadow: 0 2px 5px rgba(0, 0, 0,.5);
+}
+.rating1 label:hover:after,
+.rating1 label:hover~label:after
+{
+    opacity: 0;
+}
+.comment-container textarea{
+    margin-top: 70px;
+    padding: 10px 15px;
+}
+.comment-container .comment-btn{
+    margin-top: 10px;
+}
+.comment-container button{
+    border: 0;
+    padding: 10px 30px;
+    background-color: rgb(218, 88, 88);
+    font-size: 15px;
+    color: rgb(238, 253, 238);
+    cursor: pointer;
+    transition: .3s linear;
+}
+.comment-container button:hover{
+    background-color: rgb(166, 166, 212);
+    color: white;
+}
+.rev{
+    margin: 40px auto;
+    padding: 0 10px;
+    max-width: 1200px;
+    text-align: center;
+}
+  
+.title{
+    font-size: 40px;
+    color: rgb(50, 50, 50);
+    margin-bottom: 30px;
+    margin-top: 200px;
+}
+.reviews{
+    margin: 40px auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.review{
+    margin: 0 10px;
+    min-width: 300px;
+    margin-bottom: 40px;
+}
+.body-review{
+    background-color: rgb(238, 238, 238);
+    padding:35px;
+    box-shadow: 2px 2px 10px 3px rgb(225, 225, 225);
+}
+.body-review:hover{
+    box-shadow: 0px 0px 5px 5px rgb(200, 200, 200);
+}
+.name{
+    font-size: 28px;
+    color: rgb(50, 50, 50);
+    margin-bottom: 10px;
+}
+.rating{
+    color: rgb(253, 180, 42);
+    margin: 20px 0;
+}
+.detail-review{
+    line-height: 30px;
+    letter-spacing: 1px;
+    color: rgb(36, 33, 33);
+}
+.time{
+    margin-top: 10px;
+}
+  
+@media (max-width: 678px){
+    .review{
+      margin-top: 30px;
+      margin-bottom: 10px;
+    }
+}
